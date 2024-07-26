@@ -85,7 +85,7 @@ function decodeURI(encodedString, prefixLength = 5) {
 					let remaining = duration;
 					const countdownTimer = setInterval(() => {
 						remaining--;
-						document.getElementById('countdown').textContent = `[Estimated ${remaining} Seconds Remaining..]`;
+						document.getElementById('countdown').textContent = `[Estimated ${remaining} Seconds Remaining]`;
 						if (remaining <= 0) clearInterval(countdownTimer);
 					}, 1000);
 				};
