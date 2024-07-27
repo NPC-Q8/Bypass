@@ -10,7 +10,7 @@
 // @match        *://links-loot.com/s?*
 // @match        *://linksloot.net/s?*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      Babyhamsta
 // @license     MIT
 // @run-at      document-start
@@ -47,20 +47,20 @@ function decodeURI(encodedString, prefixLength = 5) {
 			if (parentElement) {
 				// This assumes our task loaded, we'll then check for what type of task as they all have minimum wait times.
 				const images = document.querySelectorAll('img');
-				let countdownSeconds = 10;
+				let countdownSeconds = 5;
 
 				for (let img of images) {
 					if (img.src.includes('eye.png')) {
-						countdownSeconds = 0;
+						countdownSeconds = 3;
 						break;
 					} else if (img.src.includes('bell.png')) {
-						countdownSeconds = 5;
+						countdownSeconds = 4;
 						break;
 					} else if (img.src.includes('apps.png') || img.src.includes('fire.png')) {
-						countdownSeconds = 10;
+						countdownSeconds = 5;
 						break;
 					} else if (img.src.includes('gamers.png')) {
-						countdownSeconds = 15;
+						countdownSeconds = 6;
 						break;
 					}
 				}
@@ -74,7 +74,7 @@ function decodeURI(encodedString, prefixLength = 5) {
                       <div id="tm-popup" style="padding:40px; background:#fff; border-radius:5px; box-shadow:0 2px 10px rgba(0,0,0,0.5); z-index:1000000;">
                           <div style="margin-bottom:20px;"><h1>Wait Bypass</h1><h2>Bypassing Lootlabs</h2></div>
                           <div id="countdown" style="margin-bottom:20px;"><h4>[Estimated ${countdownSeconds} Seconds Remaining]</h4></div>
-                          <div id="countdown" style="margin-bottom:20px;"><h4>[100% Code By NPC-Q8. Never Took Anything From Anyone]</h4></div>
+                          <div id="countdown" style="margin-bottom:20px;"><h4>[100% Code By NPC-Q8. Never Took Anything From Anyone | Update Fast Bypass]</h4></div>
                       </div>
                     </center>
                 </div>
